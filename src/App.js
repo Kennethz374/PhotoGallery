@@ -14,7 +14,7 @@ function App() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setPage(1);
+		setPage(() => 1);
 	};
 	const fetchPhotos = async () => {
 		setIsLoading(true);
@@ -59,7 +59,12 @@ function App() {
 				window.innerHeight + window.scrollY >= document.body.scrollHeight - 5
 			) {
 				setPage((page) => {
-					return page + 1;
+					if (page === 0) {
+						return 2;
+						//if page is 0 it default show page 1, if no query and scroll down we want page 2 instead of page 1 again
+					} else {
+						return page + 1;
+					}
 				});
 			}
 		});
