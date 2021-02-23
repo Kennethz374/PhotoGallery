@@ -32,6 +32,7 @@ main {
   font-size: 2rem;
   border: none;
   padding: 0.25rem;
+  border-radius: 10px;
 }
 
 .search .search-input::-webkit-input-placeholder {
@@ -80,6 +81,7 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 5px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -106,7 +108,10 @@ main {
           align-items: center;
   bottom: 0;
   left: 0;
-  padding: 0px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -114,6 +119,19 @@ main {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
+}
+
+.photos .photo .img-info .user h4 {
+  font-size: 1.5rem;
+}
+
+.photos .photo .img-info .user p {
+  font-size: 1rem;
+}
+
+.photos .photo:hover .img-info {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 li:last-child {

@@ -1,5 +1,3 @@
-@import "./variable";
-
 body {
 	box-sizing: border-box;
 	margin: 0;
@@ -26,6 +24,7 @@ main {
 		font-size: 2rem;
 		border: none;
 		padding: 0.25rem;
+		border-radius: 10px;
 	}
 	.search-input::placeholder {
 		color: gray;
@@ -42,7 +41,6 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	width: 90vw;
-	// border: 5px solid green;
 	margin: 0 auto;
 
 	.photo {
@@ -51,7 +49,7 @@ main {
 		flex-direction: column;
 		flex-grow: 1;
 		margin: 5px;
-
+		overflow: hidden;
 		position: relative;
 
 		img {
@@ -70,8 +68,8 @@ main {
 			align-items: center;
 			bottom: 0;
 			left: 0;
-			padding: 0px;
-			// border: 5px solid pink;
+			transform: translateY(100%);
+			transition: all 0.3s linear;
 			background: rgba(0, 0, 0, 0.4);
 
 			.user-avartar {
@@ -79,7 +77,16 @@ main {
 				width: 2.5rem;
 				border-radius: 50%;
 			}
+			.user h4 {
+				font-size: 1.5rem;
+			}
+			.user p {
+				font-size: 1rem;
+			}
 		}
+	}
+	.photo:hover .img-info {
+		transform: translateY(0);
 	}
 }
 
