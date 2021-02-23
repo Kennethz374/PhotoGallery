@@ -29,7 +29,7 @@ function App() {
 		try {
 			const response = await fetch(`${url}`);
 			const data = await response.json();
-			setIsLoading(false);
+
 			setPhotos((oldPhotos) => {
 				//when the first time click search handleSubmit will setPage = 1
 				if (query && page === 1) {
@@ -42,6 +42,7 @@ function App() {
 					return [...oldPhotos, ...data];
 				}
 			});
+			setIsLoading(false);
 		} catch (error) {
 			console.log(error);
 			setIsLoading(false);
