@@ -69,6 +69,7 @@ function App() {
 
 	return (
 		<main>
+			<header>PHOTO GALLERY</header>
 			<section className="search">
 				<form className="search-form">
 					<input

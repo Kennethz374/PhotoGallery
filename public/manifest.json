@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Photo Gallery",
+  "name": "Photo Gallery",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "lighthouselabs.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "lighthouselabs.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "lighthouselabs.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -13,7 +13,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: lightgray;
+  background-color: transparent;
+}
+
+header {
+  text-align: center;
+  font-size: 3rem;
 }
 
 .search .search-form {
@@ -168,5 +173,10 @@ li:last-child {
     max-height: 75vh;
     min-width: 0;
   }
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
 }
 /*# sourceMappingURL=index.css.map */
