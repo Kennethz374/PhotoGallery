@@ -5,7 +5,7 @@ import Loading from "../src/Loading";
 
 function App() {
 	const [photos, setPhotos] = useState([]);
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 	const [page, setPage] = useState(0);
 	const [query, setQuery] = useState("");
 	const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`;
