@@ -31,11 +31,14 @@ function App() {
 			const data = await response.json();
 			setIsLoading(false);
 			setPhotos((oldPhotos) => {
+				//when the first time click search handleSubmit will setPage = 1
 				if (query && page === 1) {
 					return data.results;
 				} else if (query) {
+					// after search, scroll down will trigger page 2, we want to return old photo and page 2 photo
 					return [...oldPhotos, ...data.results];
 				} else {
+					// when no query we just keep old photo and push new photos into the photo
 					return [...oldPhotos, ...data];
 				}
 			});
