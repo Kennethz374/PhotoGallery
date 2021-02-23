@@ -21,7 +21,7 @@
 <p> Want to build a simple front end application to practise my REACT and SASS skills</p>
 <br>
 
-# The Chanllenge and Get away
+# The Challenge and Get away
 
 <li> Learn how to implement an infinite scroll rather than using a pagination.</li>
 <li> A little bit refresher on setting up .ENV file</li>
